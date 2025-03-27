@@ -67,13 +67,11 @@ Take a screenshot of this window and add it to your portfolio, explaining what y
 </body>
 </html>
 
-You are now free to start writing a CI YAML in the box provided. To do this we are going to work through step-by-step, with each section being explained individually. Your YAML file should look like the paired screenshots when you complete each section.  
-
-The YAML commands shown here are also colour coded, parts of the command shown in orange are the YAML commands themselves, and can’t be changed, parts of the command shown in blue are the parts of the command that you can change as you see fit.  
+You are now free to start writing YAML in the box provided. To do this we are going to work through step-by-step, with each section being explained individually. Your YAML file should look like the paired screenshots when you complete each section.  
 
 As we mentioned in the lecture, your YAML should be split into three sections: 
 
-The name of your CICD pipeline, the run conditions of the CICD pipeline and then the jobs that your pipeline will complete. We are going to start with the same of the pipeline. 
+The name of your CICD pipeline, the run conditions of the CICD pipeline and then the jobs that your pipeline will complete. We are going to start with the name of the pipeline. 
 
 This is not the name of the file that we altered earlier but is instead a name of the action you are creating, this is what will show in the GitHub GUI when your action has been completed – we do this by entering 
 
@@ -89,7 +87,7 @@ You will notice that the command you have just entered has a red squiggly line u
 
 If you hover over the red squiggly line, you will see that the error that is given is that your YAML file is missing the required root key “on” - this is the setting that will cover when our pipeline runs – so we will add this next. 
 
-NOTE: When using YAML commands that are linked together should be indented using spaces when needed, the above commands are separated using more spaces to make them better fit into this document, so copy and pasting will not work. (Or will need some formatting changes to prevent errors) 
+NOTE: As mentioned in the lecture - When using YAML commands that are linked together they should be indented using spaces when needed.
 
 To do this enter the following: 
 
@@ -122,9 +120,15 @@ jobs:
 
 As stated previously, the “jobs:” command tells GitHub that we are starting our jobs, further to this the “projectdeploy:” command is the name of our list of jobs, this is a bit of an anomaly, as we can set this to be anything that makes sense (and should be something that makes sense to make it easy to understand, but it exists on the left hand side of the colon, and is still a command that is needed. The best way to think about this is like a variables name, and not it’s value. 
 
-If you think about this in the concept of Csharp, and we used the same colour scheme you would get something like this: 
+If you think about this in the concept of Csharp, and we used the same formatting you would get something like this: 
 
+```csharp
 Int number = 10 
+```
+
+```yaml
+int number =: 10 
+```
 
 Once we have created the job, we are looking to spin up a VM that we will be running our jobs on and the “runs-on:” command is where we specify what type of VM we are looking to create, in this case one that uses the current version of Ubuntu. 
 
@@ -132,7 +136,7 @@ When it is done, it should look like this.
 
 ![Image](Pictures/012.png)  
 
-We are now ready to add further jobs that will run on our VM and allow us to complete our CI – we do this by creating a steps: section inside of our jobs: one, the steps section essentially becomes a list of tasks that will be completed when the job is ran. 
+We are now ready to add further jobs that will run on our VM and allow us to complete our pipeline – we do this by creating a steps: section inside of our jobs: the steps section essentially becomes a list of tasks that will be completed when the job is ran. 
 
 Each step should be split into two sections, a - name: section, which tells GitHub what task we are completing so it can group all of the steps underneath it as one task, and accurately represent them in the GUI and a body section under that which will contain everything that will be completed in that step. 
 
