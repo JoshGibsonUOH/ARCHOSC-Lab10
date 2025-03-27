@@ -123,7 +123,7 @@ As stated previously, the “jobs:” command tells GitHub that we are starting 
 If you think about this in the concept of Csharp, and we used the same formatting you would get something like this: 
 
 ```csharp
-Int number = 10 
+int number = 10 
 ```
 
 ```yaml
