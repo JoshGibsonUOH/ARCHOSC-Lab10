@@ -1,3 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <div class="alert alert-danger" role="alert">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+    <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
+</svg> <strong>Note!!</strong>
+Everything in this lab follows on from the lab from last week - you need to ensure you have completed that one before starting this one, a link to that lab can be found here: <link href="https://joshgibsonuoh.github.io/ArchOSC-Lab8/"> 
+
+<p><strong>Also</strong> a reminder! The main page of your website must be called index.html for your deployment to work correctly - if you were running into issues last week this is a likely culprit!</p>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
 # GitHub and CICD 2: GitHub Actions and YAML
 Open your GitHub repository from last week, you should be greeted with a screen like the one below: 
 
@@ -102,7 +128,7 @@ This command tells GitHub when we want our action to be completed, in this case 
 
 Your YAML should now look like the image below 
 
-![Image](Pictures/11.png)  
+![Image](Pictures/011.png)  
 
 You will see that the previous error is gone.  
 
@@ -254,15 +280,15 @@ When done, return to your GitHub settings and go back to pages, you should have 
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
     <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
 </svg> <strong>Task</strong>
-Using the skills you learnt last week., clone your repository into your local workspace. 
+1. Using the skills you learnt last week., clone your repository into your local workspace. 
  
-Open it in Visual Studio code and add the text “Now being Deployed Using GitHub Actions” anywhere you like – the text can be any style or colour you wish.  
+<p>2. Open it in Visual Studio code and add the text “Now being Deployed Using GitHub Actions” anywhere you like – the text can be any style or colour you wish.</p>
 
-When this is done push your repository back to GitHub and this should trigger your pipeline. When this is done you should add two screenshots to your portfolio, one showing your GitHub actions page in GitHub. 
+<p> 3. When this is done push your repository back to GitHub and this should trigger your pipeline. When this is done you should add two screenshots to your portfolio, one showing your GitHub actions page in GitHub.</p>
 
-The second screenshot should be of your updated website in the GitHub pages site. 
+<p> 4. The second screenshot should be of your updated website in the GitHub pages site. </p>
 
-You should then explain what each of these screenshots show and provide a small summary of this lab.  
+<p> 5. You should then explain what each of these screenshots show and provide a small summary of this lab.</p>
     </div>
 </div>
 
