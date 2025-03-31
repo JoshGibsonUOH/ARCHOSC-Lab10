@@ -209,7 +209,7 @@ We can do this using the “Deploy to GitHub Pages” action provided by GitHub,
 
 ```yaml
 - name: Checkout Repository 
-   uses: actions/deploy-pages@v4 
+  uses: actions/deploy-pages@v4 
 ```
 
 When done, it should look like this: 
