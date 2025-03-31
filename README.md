@@ -183,7 +183,20 @@ When you have done this your YAML should look like the screenshot below:
 
 ![Image](Pictures/013.png)   
 
-Now you have your repo available on the VM the next step is to take it, and push it to GitHub pages 
+The last thing we are going to do is add permissions to the pipeline that will allow it to push to GitHub pages without issue.  
+
+To do this add the following YAML to your project, underneath your start-up rules.
+
+```yaml
+permissions: 
+ contents : read 
+ pages : write 
+ id-token: write 
+```
+
+This adds permissions to your pipeline that allows you to read your repository, and write your site to GitHub pages with the correct ID token. 
+
+Now you have your repo available on the VM and permissions set the next step is to take it, and push it to GitHub pages 
 
 Before we can do this, we first need to generate a “GitHub Artifact” that we can give to GitHub actions, and then by extension your GitHub pages site 
 
@@ -216,20 +229,6 @@ When done, it should look like this:
 
 ![Image](Pictures/014.png)  
 
-The last thing we are going to do is add permissions to the pipeline that will allow it to push to GitHub pages without issue.  
-
-To do this add the following YAML to your project, underneath your start-up rules but above your jobs.  
-
-```yaml
-permissions: 
- contents : read 
- pages : write 
- id-token: write 
-```
-
-This adds permissions to your pipeline that allows you to read your repository, and write your site to GitHub pages with the correct ID token. 
-
-When done, your full YAML pipeline should look like this: 
 
 <html lang="en">
 <head>
