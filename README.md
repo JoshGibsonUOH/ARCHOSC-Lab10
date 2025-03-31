@@ -183,9 +183,9 @@ When you have done this your YAML should look like the screenshot below:
 
 ![Image](Pictures/013.png)   
 
-The last thing we are going to do is add permissions to the pipeline that will allow it to push to GitHub pages without issue.  
+The next thing we are going to do is add permissions to the pipeline that will allow it to push to GitHub pages without issue.  
 
-To do this add the following YAML to your project, underneath your start-up rules.
+To do this add the following YAML to your project, underneath your start-up rules, but above the jobs.
 
 ```yaml
 permissions: 
